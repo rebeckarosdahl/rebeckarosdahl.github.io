@@ -1,0 +1,471 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#work {
+  background-size: 100vw 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  overflow:hidden;
+}
+
+#about {
+  background-color: white;
+}
+
+#contact {
+  background-color: white;
+}
+
+#todo {
+  background-color: white;
+}
+
+#pepp {
+  background-color: white;
+}
+
+#matchmaking {
+  background-color: white;
+}
+
+h1 {
+  font-size: 25px;
+  padding-left: 25px;
+  color: black;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  margin:34px 40px 40px 28px;
+}
+
+.contact h2 {
+  color: black;
+  font-size: 2.5vW;
+  text-align: center;
+  padding-top: 10%;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact p {
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.4vw;
+}
+
+.rubrik h2 {
+  color: black;
+  font-size: 2.8vw;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 10px;
+  float:left;
+}
+
+.rubrik2 h4 {
+  color: black;
+  font-size: 1.8vw;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-size: 14px;
+  color: black;
+  text-align: justify;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 1.4vw;
+}
+
+li {
+  display: block;
+  padding-right: 14px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 80%;
+  color: #ffffff;
+  text-decoration: none;
+  transition: .5s;
+  list-style-type: none;
+}
+
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.navbar a {
+  text-decoration: none;
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 30px 16px;
+  font-size: 16px;
+  margin: 13px 20px 10px 0px;
+
+}
+
+.navbar a:hover {
+  color: orange;
+}
+
+#rig {
+    max-width:100%;
+    margin:0;
+    padding: right;
+    font-size:0;
+    list-style:none;
+    background-color:white;
+}
+
+#rig li {
+    display: inline-block;
+    width:25%;
+    vertical-align:middle;
+    box-sizing: border-box-box;
+    padding: 14px;
+
+}
+
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: white;
+    opacity:0;
+    transition:all 0.3s; /* hur snabbt den ska hoovra till vit bakgrund*/
+}
+
+#rig li:hover .rig-overlay {
+    opacity:1; /* gör overlay bakgrundfärgen = vit */
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:40px;
+    font-weight:bold;
+    font-family: 'Raleway', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:black;
+    opacity:0;
+    filter:alpha(opacity=0);
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+
+h4 {
+  font-size: 14px;
+  color: grey;
+  text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:45%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:45.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:80%;
+    }
+}
+
+div.about {
+	width: 100vw;
+	top: 8vh;
+  float: inherit;
+	position: relative;
+  background-color: none;
+}
+
+div.contact {
+	float: center;
+}
+
+div.rubrik {
+	top: 3.2vw;
+	position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 10000;
+  padding-right: 50px;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: black;
+  padding:0px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 16px;
+  margin-right: 0px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  padding: 40px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.nav > .nav-links > a:hover {
+  color: orange;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height:650px;
+    padding: 34px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: none;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #000000;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 70px;
+    left: 20px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: 35vh; /*calc(100vh - 50px); */
+    width: 100%;
+    overflow-y: auto;
+    background-color:white;
+  }
+}
+
+/*  Centrerar bild och text*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 100px 20px 20px 20px;
+}
+
+.todotext1 {
+color: black;
+font-size: 40px;
+text-align: center;
+padding: 250px;
+font-family: 'Raleway', sans-serif;
+}
+
+.video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 100px 20px 20px 20px;
+}
+
+/* Två bilder bredvid varandra */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px 50px 20px 50px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column h2 {
+  color: black;
+  font-size: 25px;
+  text-align: left;
+  padding: 25px;
+  font-family: 'Raleway', sans-serif;
+  }
+
+.column p {
+  color: black;
+  font-size: 17px;
+  text-align: left;
+  padding: 25px;
+  font-family: 'Raleway', sans-serif;
+  }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.aboutMe {
+  width: 100vw;
+  padding-left: 14vw;
+  padding-right: 14vw;
+  padding-top: 8vH;
+}
+
+.rubrik2 {
+  float: inherit;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.education {
+  float: left;
+  width: 50%;
+  float: center;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+}
+
+h5 {
+  color: black;
+  font-size: 2vW;
+  font-family: 'Raleway', sans-serif;
+}
+
+ span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) }
+  100% { transform: rotate(  0.0deg) }
+}
