@@ -528,7 +528,7 @@ body {
     width: calc((100% / 2) - 30px);
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
   .card {
     width: 100%;
   }
