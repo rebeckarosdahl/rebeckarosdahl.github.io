@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Cutive mono;
+  src: url(CutiveMono-Regulat.ttf);
+}
+
 html {
   scroll-behavior: smooth;
 }
